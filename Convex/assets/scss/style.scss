@@ -1,0 +1,190 @@
+$accent-color: #beb1ff;
+
+$base-color: #62bdf7;
+
+$font-color: #22201a;
+
+$font : "Helvetica Neue LT Pro", arial, sans-serif;
+$font-arial : "Arial", arial, sans-serif;
+
+$font-t2 : "Roboto", arial, sans-serif;
+
+@mixin font-define($fontType, $weight){
+
+  font-family: $fontType;
+
+  @if $weight {
+    font-weight: $weight;
+  } @else {
+    font-weight: 300;
+  }
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+}
+
+@mixin box-shadow($value){
+  @if $value{
+    box-shadow: $value;
+    -moz-box-shadow: $value;
+
+  } @else {
+    box-shadow: 0 0 1px  #8d8d8d;
+    -moz-box-shadow: 0 0 1px  #8d8d8d;
+  }
+}
+
+html{
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body{
+  position: relative;
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+
+}
+$padding : 2em;
+
+div.container{
+  padding-left: $padding ;
+  padding-right: $padding;
+  padding-top: 100px;
+  width: 70%;
+
+  margin: 0 auto;
+
+
+  > div{
+    display: block;
+  }
+
+  div.s-bar{
+    text-align: center;
+    margin-top: 40px;
+
+    input.search-field {
+      // top-left -> clockwise
+      border-radius: 5px 0 0 5px;
+      font-size: 17px;
+      display: inline-flex;
+      // top -> clockwise
+      padding: 11px 20px 7px 20px;
+      width: 70%;
+      border: 1px solid #CCC;
+      @include font-define($font, 300);
+      color: #000000;
+      @include box-shadow(0px 3px 3px 0px rgba(161, 161, 161, 0.3));
+      z-index: 40;
+    }
+
+    .btn-trait{
+      border: 1px solid $accent-color;
+      background: $base-color;
+      padding: 11px 20px 7px 20px;
+      margin-top: 20px;
+      @include font-define($font-t2, bold);
+      border-radius: 0 5px 5px 0;
+      font-size: 17px;
+      position: relative;
+      width: 30%;
+      max-width: 110px;
+      top: 2px;           // If you choose Helvetica, change this to 2px
+      color: #FFF;
+      text-shadow: -.3px -.3px 0 rgba(0,0,0,0.5);
+      @include box-shadow(0px 3px 3px 0px rgba(161, 161, 161, 0.3));
+    }
+
+
+    div.s-results-pull {
+      padding: 0px;
+
+      > div {
+        display: inline;
+      }
+      div.btn-trait{
+        /*
+            This is set to none because it's only there to recreate the space to make sure that teh
+            fake dropdown is always with the input text box, no matter the size of the screen
+
+         */
+          visibility: hidden;
+      }
+      div.list{
+        font-size: 17px;
+        display: inline-table;
+        // top -> clockwise
+        padding: 11px 0 7px 0;
+        width: 69%;
+        border: 1px solid #CCC;
+        @include font-define($font, 300);
+        color: #000000;
+        @include box-shadow(0px 3px 1px 0px rgba(0, 0, 0, 0.09));
+        z-index: 40;
+        margin: 0 auto;
+        background: #FFF;
+
+        p{
+          margin: 0;
+          text-align: left;
+          padding: 7px 36px 4px 15px;
+        }
+
+        p.item{
+          text-transform: capitalize;
+        }
+
+        p.lean-left{
+          color: #858585;
+        }
+
+        p.item:hover{
+          background: #dddddd;
+          cursor: pointer;
+        }
+      }
+
+    }
+
+  }
+
+  div.s-ttl{
+    margin: 20px 30px;
+    text-align: center;
+    padding: 0;
+
+      h1{
+        margin: 0px auto;
+        @include font-define($font, 600);
+        color: $base-color;
+        font-size: 92px;
+      }
+
+      span{
+        @include font-define($font, 300);
+        margin: 2px 0 4px 0;
+        font-size: 14px;
+        position: relative;
+        bottom: 20px;
+        display: block;
+        letter-spacing: .2em;
+        color: #85837f;
+        text-transform: uppercase;
+
+      }
+  }
+
+}
+
+div#footer{
+  position: absolute;   // Position this element relative the parent
+  right: 0;  bottom: 0;  left: 0;
+  padding: .6em;
+  text-align: center;
+  @include font-define($font, 300);
+  color: #9e9c98;
+  font-size: 14px;
+  background: #FFF;
+}

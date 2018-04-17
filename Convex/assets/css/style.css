@@ -1,0 +1,136 @@
+html {
+  height: 100%;
+  box-sizing: border-box; }
+
+body {
+  position: relative;
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%; }
+
+div.container {
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 100px;
+  width: 70%;
+  margin: 0 auto; }
+  div.container > div {
+    display: block; }
+  div.container div.s-bar {
+    text-align: center;
+    margin-top: 40px; }
+    div.container div.s-bar input.search-field {
+      border-radius: 5px 0 0 5px;
+      font-size: 17px;
+      display: inline-flex;
+      padding: 11px 20px 7px 20px;
+      width: 70%;
+      border: 1px solid #CCC;
+      font-family: "Helvetica Neue LT Pro", arial, sans-serif;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: auto;
+      color: #000000;
+      box-shadow: 0px 3px 3px 0px rgba(161, 161, 161, 0.3);
+      -moz-box-shadow: 0px 3px 3px 0px rgba(161, 161, 161, 0.3);
+      z-index: 40; }
+    div.container div.s-bar .btn-trait {
+      border: 1px solid #beb1ff;
+      background: #62bdf7;
+      padding: 11px 20px 7px 20px;
+      margin-top: 20px;
+      font-family: "Roboto", arial, sans-serif;
+      font-weight: bold;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: auto;
+      border-radius: 0 5px 5px 0;
+      font-size: 17px;
+      position: relative;
+      width: 30%;
+      max-width: 110px;
+      top: 2px;
+      color: #FFF;
+      text-shadow: -0.3px -0.3px 0 rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 3px 3px 0px rgba(161, 161, 161, 0.3);
+      -moz-box-shadow: 0px 3px 3px 0px rgba(161, 161, 161, 0.3); }
+    div.container div.s-bar div.s-results-pull {
+      padding: 0px; }
+      div.container div.s-bar div.s-results-pull > div {
+        display: inline; }
+      div.container div.s-bar div.s-results-pull div.btn-trait {
+        /*
+            This is set to none because it's only there to recreate the space to make sure that teh
+            fake dropdown is always with the input text box, no matter the size of the screen
+
+         */
+        visibility: hidden; }
+      div.container div.s-bar div.s-results-pull div.list {
+        font-size: 17px;
+        display: inline-table;
+        padding: 11px 0 7px 0;
+        width: 69%;
+        border: 1px solid #CCC;
+        font-family: "Helvetica Neue LT Pro", arial, sans-serif;
+        font-weight: 300;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: auto;
+        color: #000000;
+        box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.09);
+        -moz-box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.09);
+        z-index: 40;
+        margin: 0 auto;
+        background: #FFF; }
+        div.container div.s-bar div.s-results-pull div.list p {
+          margin: 0;
+          text-align: left;
+          padding: 7px 36px 4px 15px; }
+        div.container div.s-bar div.s-results-pull div.list p.item {
+          text-transform: capitalize; }
+        div.container div.s-bar div.s-results-pull div.list p.lean-left {
+          color: #858585; }
+        div.container div.s-bar div.s-results-pull div.list p.item:hover {
+          background: #dddddd;
+          cursor: pointer; }
+  div.container div.s-ttl {
+    margin: 20px 30px;
+    text-align: center;
+    padding: 0; }
+    div.container div.s-ttl h1 {
+      margin: 0px auto;
+      font-family: "Helvetica Neue LT Pro", arial, sans-serif;
+      font-weight: 600;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: auto;
+      color: #62bdf7;
+      font-size: 92px; }
+    div.container div.s-ttl span {
+      font-family: "Helvetica Neue LT Pro", arial, sans-serif;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: auto;
+      margin: 2px 0 4px 0;
+      font-size: 14px;
+      position: relative;
+      bottom: 20px;
+      display: block;
+      letter-spacing: .2em;
+      color: #85837f;
+      text-transform: uppercase; }
+
+div#footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: .6em;
+  text-align: center;
+  font-family: "Helvetica Neue LT Pro", arial, sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+  color: #9e9c98;
+  font-size: 14px;
+  background: #FFF; }
+
+/*# sourceMappingURL=style.css.map */

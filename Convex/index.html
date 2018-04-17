@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Convex - UDSM Student Search Engine</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="search-field">
+            <div class="s-ttl">
+                <h1>Convex</h1>
+                <span>UDSM Student Search Engine</span>
+            </div>
+            <div class="s-bar">
+                <form method="get" action="php/search_algo.php">
+                    <input type="search" class="search-field" name="search" placeholder="Try searching by phrase e.g 'Ke'" /><button class="btn-trait">Search</button>
+                </form>
+                <div class="s-results-pull" style="display: none;">
+                    <div class="list">
+                        <!-- The list will appear here -->
+                    </div>
+                    <div class="btn-trait">
+                        Search
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p class="ft-note">Created by iO. &copy 2018 All rights reserved</p>
+    </div>
+<script type="text/javascript" src="assets/js/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="assets/js/search-alg.js"></script>
+<script type="text/javascript" src="assets/js/sg-toggle.js"></script>
+</body>
+</html>
