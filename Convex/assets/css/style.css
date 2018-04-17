@@ -7,19 +7,25 @@ body {
   padding: 0;
   width: 100%;
   margin: 0 auto;
-  height: 100%; }
+  height: 100%;
+}
 
 div.container {
   padding-left: 2em;
   padding-right: 2em;
   padding-top: 100px;
   width: 70%;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
   div.container > div {
-    display: block; }
+    display: block;
+  }
+
   div.container div.s-bar {
     text-align: center;
-    margin-top: 40px; }
+    margin-top: 40px;
+  }
+
     div.container div.s-bar input.search-field {
       border-radius: 5px 0 0 5px;
       font-size: 17px;
@@ -34,7 +40,9 @@ div.container {
       color: #000000;
       box-shadow: 0px 3px 3px 0px rgba(161, 161, 161, 0.3);
       -moz-box-shadow: 0px 3px 3px 0px rgba(161, 161, 161, 0.3);
-      z-index: 40; }
+      z-index: 40;
+    }
+
     div.container div.s-bar .btn-trait {
       border: 1px solid #beb1ff;
       background: #62bdf7;
@@ -53,18 +61,26 @@ div.container {
       color: #FFF;
       text-shadow: -0.3px -0.3px 0 rgba(0, 0, 0, 0.5);
       box-shadow: 0px 3px 3px 0px rgba(161, 161, 161, 0.3);
-      -moz-box-shadow: 0px 3px 3px 0px rgba(161, 161, 161, 0.3); }
+      -moz-box-shadow: 0px 3px 3px 0px rgba(161, 161, 161, 0.3);
+    }
+
     div.container div.s-bar div.s-results-pull {
-      padding: 0px; }
+      padding: 0px;
+    }
+
       div.container div.s-bar div.s-results-pull > div {
-        display: inline; }
+        display: inline;
+      }
+
       div.container div.s-bar div.s-results-pull div.btn-trait {
         /*
             This is set to none because it's only there to recreate the space to make sure that teh
             fake dropdown is always with the input text box, no matter the size of the screen
 
          */
-        visibility: hidden; }
+        visibility: hidden;
+      }
+
       div.container div.s-bar div.s-results-pull div.list {
         font-size: 17px;
         display: inline-table;
@@ -80,22 +96,34 @@ div.container {
         -moz-box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.09);
         z-index: 40;
         margin: 0 auto;
-        background: #FFF; }
+        background: #FFF;
+      }
+
         div.container div.s-bar div.s-results-pull div.list p {
           margin: 0;
           text-align: left;
-          padding: 7px 36px 4px 15px; }
+          padding: 7px 36px 4px 15px;
+        }
+
         div.container div.s-bar div.s-results-pull div.list p.item {
-          text-transform: capitalize; }
+          text-transform: capitalize;
+        }
+
         div.container div.s-bar div.s-results-pull div.list p.lean-left {
-          color: #858585; }
+          color: #858585;
+        }
+
         div.container div.s-bar div.s-results-pull div.list p.item:hover {
           background: #dddddd;
-          cursor: pointer; }
+          cursor: pointer;
+        }
+
   div.container div.s-ttl {
     margin: 20px 30px;
     text-align: center;
-    padding: 0; }
+    padding: 0;
+  }
+
     div.container div.s-ttl h1 {
       margin: 0px auto;
       font-family: "Helvetica Neue LT Pro", arial, sans-serif;
@@ -103,7 +131,9 @@ div.container {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: auto;
       color: #62bdf7;
-      font-size: 92px; }
+      font-size: 92px;
+    }
+
     div.container div.s-ttl span {
       font-family: "Helvetica Neue LT Pro", arial, sans-serif;
       font-weight: 300;
@@ -116,7 +146,8 @@ div.container {
       display: block;
       letter-spacing: .2em;
       color: #85837f;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+    }
 
 div#footer {
   position: absolute;
@@ -131,6 +162,7 @@ div#footer {
   -moz-osx-font-smoothing: auto;
   color: #9e9c98;
   font-size: 14px;
-  background: #FFF; }
+  background: #FFF;
+}
 
 /*# sourceMappingURL=style.css.map */
